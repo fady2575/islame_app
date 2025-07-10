@@ -1,5 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:islame_app/tabs/QuranTab/sura.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class QuranSeves {
   static List<String> arabicsuraName = [
@@ -352,6 +353,7 @@ class QuranSeves {
   ];
 
   static List<Sura> sura = List.generate(114, (index) => getsuraofindex(index));
+  static List<Sura> mostRecentle = [];
 
   static Sura getsuraofindex(int index) => Sura(
     arabicsuraName: arabicsuraName[index],
@@ -372,5 +374,18 @@ class QuranSeves {
         sura.add(suras);
       }
     }
-  }//سيرش الايات
+  } //سيرش الايات
+
+  static Future<void> addsuramostresntle(Sura sura) async{
+    bool doseexieted = mostRecentle.any(
+      (mostRecentle) => mostRecentle.num == sura.num,
+    );
+    if (!doseexieted) {
+      mostRecentle.add(sura);
+      List<String>mostRecentleIndexs=mostRecentle.map((sura)=>(sura.num-1).toString()).toList();
+      SharedPreferences   SharedPref= await SharedPreferences .getInstance();
+
+      SharedPref.setStringList("mostRecentleIndexs", mostRecentleIndexs);
+    }
+  }
 }

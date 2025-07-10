@@ -6,6 +6,8 @@ import 'package:islame_app/tabs/QuranTab/sura.dart';
 import 'package:islame_app/tabs/QuranTab/sura_detels_screen.dart';
 import 'package:islame_app/tabs/QuranTab/suras_item_tab.dart';
 
+import 'most_recentle_secshoin.dart';
+
 class QuranTab extends StatefulWidget {
   @override
   State<QuranTab> createState() => _QuranTabState();
@@ -58,6 +60,7 @@ class _QuranTabState extends State<QuranTab> {
             },//سيرش الايات
           ),
         ),
+         MostRecentleSecshoin(),
         Padding(
           padding: EdgeInsetsGeometry.symmetric(vertical: 10, horizontal: 20),
           child: Text(
@@ -78,10 +81,13 @@ class _QuranTabState extends State<QuranTab> {
             itemBuilder: (_, index) {
               Sura sura = QuranSeves.sura[index];
               return InkWell(
-                onTap: () {
-                  Navigator.of(
+                onTap: () async{
+                  QuranSeves.addsuramostresntle(sura);
+               await   Navigator.of(
                     context,
                   ).pushNamed(SuraDetelsScreen.routeName, arguments: sura);
+                  setState(() {});
+
                 },
                 child: SurasItemTab(sura),
               );
