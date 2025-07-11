@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_svg: ^2.2.0
   shared_preferences: ^2.5.3
+  carousel_slider: ^5.1.1
+
 
 
 
@@ -179,6 +181,56 @@ flutter:
     - assets/text/Suras/112.txt
     - assets/text/Suras/113.txt
     - assets/text/Suras/114.txt
+    - assets/text/Hadeeth/h1.txt
+    - assets/text/Hadeeth/h2.txt
+    - assets/text/Hadeeth/h3.txt
+    - assets/text/Hadeeth/h4.txt
+    - assets/text/Hadeeth/h5.txt
+    - assets/text/Hadeeth/h6.txt
+    - assets/text/Hadeeth/h7.txt
+    - assets/text/Hadeeth/h8.txt
+    - assets/text/Hadeeth/h9.txt
+    - assets/text/Hadeeth/h10.txt
+    - assets/text/Hadeeth/h11.txt
+    - assets/text/Hadeeth/h12.txt
+    - assets/text/Hadeeth/h13.txt
+    - assets/text/Hadeeth/h14.txt
+    - assets/text/Hadeeth/h15.txt
+    - assets/text/Hadeeth/h16.txt
+    - assets/text/Hadeeth/h17.txt
+    - assets/text/Hadeeth/h18.txt
+    - assets/text/Hadeeth/h19.txt
+    - assets/text/Hadeeth/h20.txt
+    - assets/text/Hadeeth/h21.txt
+    - assets/text/Hadeeth/h22.txt
+    - assets/text/Hadeeth/h23.txt
+    - assets/text/Hadeeth/h24.txt
+    - assets/text/Hadeeth/h25.txt
+    - assets/text/Hadeeth/h26.txt
+    - assets/text/Hadeeth/h27.txt
+    - assets/text/Hadeeth/h28.txt
+    - assets/text/Hadeeth/h29.txt
+    - assets/text/Hadeeth/h30.txt
+    - assets/text/Hadeeth/h31.txt
+    - assets/text/Hadeeth/h32.txt
+    - assets/text/Hadeeth/h33.txt
+    - assets/text/Hadeeth/h34.txt
+    - assets/text/Hadeeth/h35.txt
+    - assets/text/Hadeeth/h36.txt
+    - assets/text/Hadeeth/h37.txt
+    - assets/text/Hadeeth/h38.txt
+    - assets/text/Hadeeth/h39.txt
+    - assets/text/Hadeeth/h40.txt
+    - assets/text/Hadeeth/h41.txt
+    - assets/text/Hadeeth/h42.txt
+    - assets/text/Hadeeth/h43.txt
+    - assets/text/Hadeeth/h44.txt
+    - assets/text/Hadeeth/h45.txt
+    - assets/text/Hadeeth/h46.txt
+    - assets/text/Hadeeth/h47.txt
+    - assets/text/Hadeeth/h48.txt
+    - assets/text/Hadeeth/h49.txt
+    - assets/text/Hadeeth/h50.txt
     - assets/svg/hadeith.svg
     - assets/svg/quran.svg
     - assets/svg/radio.svg

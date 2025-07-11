@@ -7,7 +7,7 @@ LodengIndicator({ this.color});
   @override
   Widget build(BuildContext context) {
     return Center(child: CircularProgressIndicator(
-      color:color?? ThemeColor.primary,
+      color:color?? ThemeColor.Black,
     ));
   }
 }
