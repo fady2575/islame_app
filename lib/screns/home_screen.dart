@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:islame_app/brobertes/theme_color.dart';
 import 'package:islame_app/screns/navbar_an_slected.dart';
 import 'package:islame_app/screns/navbar_slected.dart';
-import 'package:islame_app/tabs/hadeith_tab.dart';
 import 'package:islame_app/tabs/QuranTab/quran_tab.dart';
 import 'package:islame_app/tabs/radio_botom/radio_tab.dart';
 import 'package:islame_app/tabs/sebha_tab.dart';
 import 'package:islame_app/tabs/taiem_tab.dart';
+
+import '../tabs/hadeith_tab/hadeith_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   static const String routeName = "/";

@@ -375,7 +375,16 @@ class QuranSeves {
       }
     }
   } //سيرش الايات
-
+  static Future<void>gitmostRecentlesura()async{
+  SharedPreferences   SharedPref= await SharedPreferences .getInstance();
+  List<String>?mostRecentleIndexs=SharedPref.getStringList("mostRecentleIndexs");
+  if(mostRecentleIndexs==null )return;
+  mostRecentleIndexs.map((indexString){
+int index =int.parse(indexString);
+Sura sura =getsuraofindex(index);
+return sura;
+  }).toList();
+}
   static Future<void> addsuramostresntle(Sura sura) async{
     bool doseexieted = mostRecentle.any(
       (mostRecentle) => mostRecentle.num == sura.num,

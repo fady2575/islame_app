@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:islame_app/screns/home_screen.dart';
 import 'package:islame_app/screns/splash_screen.dart';
+import 'package:islame_app/tabs/QuranTab/quran_seves.dart';
 import 'package:islame_app/tabs/QuranTab/sura_detels_screen.dart';
 
-void main() {
+ Future<void> main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await  QuranSeves.gitmostRecentlesura();
   runApp(const MyApp());
 }
 
