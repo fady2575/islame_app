@@ -1,3 +1,5 @@
+import 'dart:core';
+
 import 'package:flutter/material.dart';
 import 'package:islame_app/brobertes/theme_color.dart';
 import 'package:islame_app/tabs/QuranTab/quran_seves.dart';

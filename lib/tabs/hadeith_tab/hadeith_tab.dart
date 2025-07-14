@@ -1,7 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-
-import 'hadeith_item.dart';
+import 'package:islame_app/tabs/hadeith_tab/hadeith_item.dart';
 
 class HadeithTab extends StatelessWidget {
   static const String routeName = "HadeithTab";
